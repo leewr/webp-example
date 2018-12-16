@@ -1,6 +1,6 @@
 $(function(){
 	$('[data-url]').each(function(item, index){
-		var ext = /webpAvaile=true/.test(document.cookie) ? '.webp' : ''
+		var ext = window.webpAvaile ? '.webp' : ''
 		$(this).attr('src', $(this).attr('data-url') + ext)
 	})	
 })
