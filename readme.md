@@ -113,7 +113,7 @@ location / {
 @mixin webpbg($url) {
     background-image: url($url);
     @at-root .webpa & {
-        background-image: url($url);
+        background-image: url($url+'.webp');
     }
 }
 ```
@@ -122,7 +122,7 @@ location / {
 @include webpbg('../image/header.jpg');
 ```
 #### 2、html中图片如何引入
-##### html中首图src中
+##### html中首图img中
 通过流程可以知道我们在页面上写入了一个cookie(webpAvaile = true)。在加载页面的时候我们在页面首图后获取cookie页面是否存在webpAvaile,通过变量设置图片格式。
 ``` js
 var headImg = docoment.getElementById('#headImg')
@@ -134,8 +134,10 @@ if ( /webpAvaile=availeable/.test(document.cookies)) {
     headImg.setAttribute('src',  srcUrl)
 }
 ```
-这样我们就处理了首图src的图片格式。但是这样页面可能会因为父级元素、图片都为设定高度而产生抖动。那么如何处理？直接设置图片高度或者采用picture标签进行加载图片。
+这样我们就处理了首图src的图片格式。但是这样页面可能会因为父级元素、图片都为设定高度而产生抖动。那么如何处理？直接设置图片高度或者父级元素设置最小高度、或固定高度。
 
+
+html5中有picture标签可以选择加载不同图片，是否可以利用picture元素去掉js对图片进行格式的选择。实践是可行的。
 html5中的picture元素兼容性情况。
 ![picture兼容性](https://upload-images.jianshu.io/upload_images/330266-23c0aed6263823c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -183,7 +185,7 @@ gulp.task('webp', function () {
 略。
 
 ##### nginx技术实现：
-实现过程，对支持webp的请求设置cookies。利用nginx检测图片请求是否存在，如果不存在通过lua调用imageMagic创建webp图片并返回。需要注意的是nginx需要安装lua支持的模块。
+实现过程，对支持webp的请求设置cookies。利用nginx检测图片请求是否存在，如果不存在通过lua调用imageMagic创建webp图片并返回。需要注意的是nginx需要安装lua支持的模块。[什么是lua]()参考这里。
 
 ```
 user  root; # nginx 用户权限 执行lua创建图片命令需要读写权限
@@ -210,7 +212,7 @@ http {
     }
 }
 ```
-下面看lua, lua 中代码非常简单。定义command命令，调用系统os.execute(command)执行convert图片转换命令。convert是ImageMagic的命令。```..``` lua 中字符串连接。ngx.var.ext是nginx中定义的变量。
+下面看lua, lua 中代码非常简单。定义command命令，调用系统```os.execute(command)```执行convert图片转换命令。convert是ImageMagic的命令。```..``` lua 中字符串连接。ngx.var.ext是nginx中定义的变量。
 ``` lua
 local command
 command = "convert " ..ngx.var.request_filepath.. " " ..ngx.var.request_filepath..ngx.var.ext
@@ -221,7 +223,7 @@ ngx.exec(ngx.var.request_uri)
 详细见另一篇文章，[nginx + lua + ImageMagic实现webp图片剪切]()。
 
 
-小结：webp图片可以通过webpack、gulp在前端打包的时候生成，也可以通过nginx层自动完成图片的转换。两者都可以达到目的。通过nginx层创建图片是一个更系统的方案。因为在对图片进行处理的时，我们的需求可能不只是简单的图片格式转换。当我们需要在不同的情形调用不同的图片大小、不同图片格式的图片的时候，这时候前端就无能为力了,如需要支持```90x90.jpg.webp```的图片。需要依赖整个系统的能力实现资源的管理，而webp图片格式转换只是静态资源管理中的一个小需求了。
+小结：webp图片可以通过webpack、gulp在前端打包的时候生成，也可以通过nginx层自动完成图片的转换。两者都可以达到目的。通过nginx层创建图片是一个更系统的方案。因为在对图片进行处理的时，我们的需求可能不只是简单的图片格式转换。当我们需要在不同的情形调用不同的图片大小、不同图片格式的图片的时候，这时候前端就无能为力了,如需要支持```90x90.jpg.webp```的图片。webp格式的支持只是资源管理中一个小需求，为了满足更多复杂的场景，选择nginx做图片转换会是一个更好的选择。
 
 # 最后总结一下：
 流程
