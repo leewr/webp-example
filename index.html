@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>新手活动</title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    	<script type="text/javascript" src="js/adaptive.js"></script>
+	</head>
+	<body>
+		<!-- banner -->
+		<header>
+			<picture class="img">
+				<source class="img" srcset="images/banner.jpg.webp" type="image/webp">
+				<img class="img" id="headImg" src="images/banner.jpg"/>
+			</picture>
+			<a href="javascript:;" class="ruleBottomRight"></a>
+		</header>
+		<script type="text/javascript">
+			(function () {
+				function addRootTag() {
+			        var className = document.documentElement.className;
+			        var name = className ? ' webpa' : 'webpa';
+			        document.documentElement.className += name ;
+			    }
+			    var headImg = document.getElementById('headImg');
+				var srcUrl = headImg.getAttribute('data-image');
+				console.log(/webpAvaile=true/.test(document.cookie));
+				if (/webpAvaile=true/.test(document.cookie)) {
+					addRootTag();
+				    window.webpAvaile = true;
+				    // headImg.setAttribute('src',  srcUrl + '.webp')
+				} else {
+				    // headImg.setAttribute('src',  srcUrl)
+				}
+			})()
+		
+		
+		</script>
+		<section class="constainer">
+			<div class="one">
+				<div class="boxhead">
+				</div>
+				<div class="boxbody">
+					<div class="itemBox">
+						<div class="title">限时奖励一:10元奖励</div>
+						<div class="item">
+							<div class="left">
+								<div class="top"><span class="fs">￥</span><span class="f">10</span></div>
+								<div>奖励</div>
+							</div>
+							<div class="right">
+								<p class="p1">首次在新手专区单笔出借新手<br>plus≥500元，送10元奖励</p>
+								<p class="gray">12月10日~12月31日</p>
+							</div>
+						</div>
+					</div>
+					<div class="itemBox">
+						<div class="title">限时奖励二:0.5%奖励</div>
+						<div class="item itembg">
+							<div class="left">
+								<div class="top"><span class="f">0.5</span><span class="fs">%</span></div>
+								<div>奖励</div>
+							</div>
+							<div class="right">
+								<p class="p1">出借新手plus，拿0.5%出借奖励</p>
+								<p class="gray">12月10日~12月31日</p>
+							</div>
+						</div>
+					</div>
+					<div class="table">
+						<table>
+							<tr>
+								<th>出借产品</th>
+								<th>出借金额</th>
+								<th>奖励额度</th>
+								<th>奖励范围</th>
+							</tr>
+							<tr>
+								<td>新手PLUS1</td>
+								<td>≥1万</td>
+								<td>0.5% </td>
+								<td>50元</td>
+							</tr>
+							<tr>
+								<td>新手PLUS2</td>
+								<td>≥1万</td>
+								<td>0.5% </td>
+								<td>50~100元</td>
+							</tr>
+							<tr>
+								<td>新手PLUS3</td>
+								<td>≥1万</td>
+								<td>0.5% </td>
+								<td>50~500元</td>
+							</tr>
+							<tr>
+								<td>新手PLUS4</td>
+								<td>≥1万</td>
+								<td>0.5% </td>
+								<td>50~500元</td>
+							</tr>
+						</table>
+					</div>
+					<a class="btn loan">立即出借</a>
+				</div>
+			</div>
+			<div class="two">
+				<div class="boxhead">
+				</div>
+				<div class="boxbody">
+					<div class="title">福利一:注册送350红包</div>
+					<div class="flexBox">
+						<div class="flexItem">
+							<div class="topBox">
+								<div class="t1">返金券</div>
+								<div class="t2"><span class="f30">￥</span><span class="f60">50</span></div>
+								<div class="f26">≥1个月1%抵扣使用</div>
+							</div>
+							<div class="text">建议用于新手PLUS 1</div>
+						</div>
+						<div class="flexItem">
+							<div class="topBox topBox1">
+								<div class="t1">优惠券</div>
+								<div class="t2"><span class="f60"><span class="f30">￥</span>100</span></div>
+								<div class="f26">≥3个月 ≥2万</div>
+								<div class="des">可用</div>
+							</div>
+							<div class="text">建议用于新手PLUS 2</div>
+						</div>
+						<div class="flexItem">
+							<div class="topBox topBox1">
+								<div class="t1">优惠券</div>
+								<div class="t2"><span class="f30">￥</span><span class="f60">200</span></div>
+								<div class="f26">≥6个月 ≥2万</div>
+								<div class="des">可用</div>
+							</div>
+							<div class="text">建议用于新手PLUS 3</div>
+						</div>
+					</div>
+					<div class="title nobg"><span><em class="titlel"></em>福利二:任意出借送1%赠利券<em class="titler"></em></span></div>
+					<div class="quanbox">
+						<div class="text"><span>1%</span><span>赠利券</span></div>
+						<p>新手PLUS 12个月可用</p>
+					</div>
+					<div class="title">福利三:专享优惠项目</div>
+					<div class="twocol">
+						<div class="cell">
+							<div class="cellTop"><span>1个月</span></div>
+							<h3 class="org"><span class="f56 fdin">7+3</span><span>%</span></h3>
+							<h4 class="f26">历史年化</h4>
+							<h4 class="f26 type">还款方式</h4>
+							<p class="c66">到期还本付息</p>
+						</div>
+						<div class="cell">
+							<div class="cellTop"><span>3个月</span></div>
+							<h3 class="org"><span class="f56 fdin">7.2+3.3</span><span>%</span></h3>
+							<h4 class="f26">历史年化</h4>
+							<h4 class="f26 type">还款方式</h4>
+							<p class="c66">到期还本付息</p>
+						</div>
+					</div>
+					<a class="btn loan">立即出借</a>
+				</div>			
+			</div>
+
+			<div class="three">
+				<div class="boxhead">
+				</div>
+				<div class="boxbody">
+					<div class="glBox">
+						<div class="glItem glItemSpc">
+							<div class="org"><span class="f56"><span class="f26">￥</span>350</span></div>
+							<p class="c99 f26">出借红包</p>
+							<h5 class="cff f26">1.注册即可领取</h5>
+						</div>
+						<div class="glItem">
+							<div class="org"><span class="f56"><span class="f26">￥</span>10</span></div>
+							<p class="c99 f26">奖金</p>
+							<h5 class="cff f26 ">2.新手区任意<br>出借500元</h5>
+						</div>
+					</div>
+					<div class="glBox">
+						<div class="glItem">
+							<div class="org">
+								<div class="flex">
+									<div>
+										<span class="f56"><span class="f26">￥</span>50</span>
+										<div class="c99">优惠券</div>
+									</div>
+									<span class="add">+</span>
+									<div>
+										<span class="f56"><span class="f26">￥</span>50</span>
+										<div class="c99" style="width: 100%">限时奖励</div>
+									</div>
+								</div>
+							</div>
+							<h5 class="cff f26">3.出借新手PLUS1 <br>≥ 1万元</h5>
+						</div>
+						<div class="glItem">
+							<div class="org ">
+								<div class="flex">
+									<div>
+										<span class="f56"><span class="f26">￥</span>100</span>
+										<div class="c99">优惠券</div>
+									</div>
+									<span class="add">+</span>
+									<div><span class="f56" style="margin-right: -0.2rem;"><span class="f26">￥</span>100</span><div class="c99" >限时奖励</div></div>
+								</div>
+							</div>
+							<h5 class="cff f26">4.出借新手PLUS2<br> ≥ 2万元</h5>
+						</div>
+					</div>
+					<a class="btn reg">立即注册</a>
+				</div>
+			</div>
+			<div class="footer"><span>[广告]借贷有风险,出借需谨慎</span></div>
+		</section>
+		<div class="maskShare hide"></div>
+		<div class="share hide">
+			<img src="" data-url="images/shareMask.png" />
+		</div>
+		<div class="mask hide"></div>
+		<div class="popup" id="popup">
+			<div class="popupBox">
+				<img src="" class="close" data-url="images/close.png" />
+				<div class="ruleBox hide">
+					<h2><img src="" data-url="images/titleRule.jpg"/></h2>
+					<div class="ruleText">
+						<div><span class="icon">1</span><p>活动时间：12月10日 — 12月31日</p></div>
+						<div><span class="icon">2</span><p>新用户出借新手专区指定产品≥10000，即可获得出借额的0.5%奖励；奖励以余额形式发放至账户；</p></div>
+						<div><span class="icon">3</span><p>首次在新手专区单笔出借新手plus≥500元，额外得10元奖励，奖励以余额形式发放至账户；</p></div>
+						<div><span class="icon">4</span><p>所有奖励在出借后3个工作日内发放至投哪网账户余额，请留意账户交易记录；</p></div>
+						<div><span class="icon">5</span><p>渠道不参与活动，具体请以渠道规则为准。</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+</html>

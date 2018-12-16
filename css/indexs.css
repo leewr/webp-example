@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/***自定制样式**************************************************/
+.hide {
+  display: none; }
+
+picture {
+  display: block; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #333;
+  background: #4231ba;
+  font-family: "Helvetica", "Microsoft YaHei"; }
+
+p span.emphasize {
+  color: #fcf57b; }
+
+.org {
+  color: #f98015; }
+
+.din {
+  font-family: "din";
+  font-weight: bold; }
+
+.cff {
+  color: #fff; }
+
+.f26 {
+  font-size: 0.26rem; }
+
+.f30 {
+  font-size: 0.3rem;
+  font-family: "din"; }
+
+.f40 {
+  font-size: 0.4rem;
+  font-family: "din"; }
+
+.f60 {
+  font-size: 0.56rem;
+  font-family: "din"; }
+
+.f56 {
+  font-size: 0.56rem;
+  font-family: "din"; }
+
+.c66 {
+  color: #666; }
+
+.c99 {
+  color: #999; }
+
+header {
+  position: relative; }
+  header .ruleBottomRight {
+    position: fixed;
+    top: 4.7rem;
+    right: 0;
+    z-index: 1;
+    display: inline-block;
+    width: .51rem;
+    height: 0.87rem;
+    background-image: url("../images/ruleBtn.png");
+    background-size: 100% 100%; }
+    .webpa header .ruleBottomRight {
+      background-image: url("../images/ruleBtn.png.webp"); }
+  header .img {
+    width: 100%; }
+
+.constainer {
+  position: relative;
+  overflow: hidden;
+  margin-top: -2.77rem; }
+  .constainer .one {
+    margin: 0 0.36rem;
+    background-image: url("../images/top.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    .webpa .constainer .one {
+      background-image: url("../images/top.png.webp"); }
+  .constainer .boxhead {
+    height: 1.24rem; }
+    .constainer .boxhead img {
+      width: 100%;
+      vertical-align: middle; }
+  .constainer .boxbody {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1rem, #765bf8 1rem, #765bf8 100%);
+    padding-bottom: 0.6rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+    box-shadow: 0 0.1rem 0 #7743da; }
+    .constainer .boxbody .itemBox {
+      margin: 0 0.3rem 0.1rem 0.3rem;
+      padding-top: 0.4rem; }
+      .constainer .boxbody .itemBox .title {
+        margin: 0 0 0.3rem 0; }
+      .constainer .boxbody .itemBox .item {
+        height: 1.40rem;
+        background-image: url("../images/itembg.png");
+        background-size: 100% 1.4rem;
+        display: flex; }
+        .webpa .constainer .boxbody .itemBox .item {
+          background-image: url("../images/itembg.png.webp"); }
+        .constainer .boxbody .itemBox .item.itembg {
+          background-image: url("../images/itembg2.png");
+          background-size: 100% 1.4rem; }
+          .webpa .constainer .boxbody .itemBox .item.itembg {
+            background-image: url("../images/itembg2.png.webp"); }
+          .constainer .boxbody .itemBox .item.itembg .right .p1 {
+            color: #0098df;
+            margin-top: 0.1rem; }
+          .constainer .boxbody .itemBox .item.itembg .right .gray {
+            margin-top: 0.1rem; }
+        .constainer .boxbody .itemBox .item .left {
+          color: #fff;
+          flex-basis: 1.4rem;
+          text-align: center; }
+        .constainer .boxbody .itemBox .item .top {
+          padding-top: 0.2rem; }
+        .constainer .boxbody .itemBox .item .f {
+          font-size: .56rem; }
+        .constainer .boxbody .itemBox .item .fs {
+          font-size: 0.28rem; }
+        .constainer .boxbody .itemBox .item .right p {
+          margin: 0 0.2rem 0 0.4rem; }
+        .constainer .boxbody .itemBox .item .right .p1 {
+          padding-top: 0.2rem;
+          font-size: 0.26rem;
+          color: #c46300;
+          font-weight: bold; }
+        .constainer .boxbody .itemBox .item .right .gray {
+          color: #666;
+          font-size: 0.26rem; }
+  .constainer .title {
+    text-align: center;
+    background-image: url("../images/title.png");
+    background-size: 110% 100%;
+    color: #fff;
+    font-size: 0.32rem;
+    line-height: 0.45rem;
+    font-weight: bold; }
+    .webpa .constainer .title {
+      background-image: url("../images/title.png.webp"); }
+    .constainer .title.nobg {
+      background: none; }
+      .constainer .title.nobg span {
+        position: relative;
+        font-weight: bold; }
+      .constainer .title.nobg em {
+        position: absolute;
+        width: 0.8rem;
+        height: 0.16rem;
+        display: inline-block;
+        top: 0.1rem;
+        background-size: 100%; }
+      .constainer .title.nobg .titlel {
+        left: -1rem;
+        background-image: url("../images/titlel.png"); }
+        .webpa .constainer .title.nobg .titlel {
+          background-image: url("../images/titlel.png.webp"); }
+      .constainer .title.nobg .titler {
+        right: -1rem;
+        background-image: url("../images/titler.png"); }
+        .webpa .constainer .title.nobg .titler {
+          background-image: url("../images/titler.png.webp"); }
+  .constainer .btn {
+    height: 1rem;
+    margin: 0 0.55rem;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #ffa447, #ff8041);
+    background: linear-gradient(left, #ffa447, #ff8041);
+    border-radius: 0.5rem;
+    color: #fff;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    display: block; }
+  .constainer .one {
+    margin-bottom: 0.7rem; }
+    .constainer .one .itembox {
+      margin: 0.68rem 0.26rem 0 0.26rem; }
+      .constainer .one .itembox .item {
+        height: 1.8rem;
+        margin-bottom: 0.27rem;
+        background-image: url("../images/november/item-bg.png");
+        background-size: 100% 100%;
+        box-shadow: 0 0 30px rgba(244, 115, 122, 0.2);
+        border-radius: 0.2rem; }
+        .webpa .constainer .one .itembox .item {
+          background-image: url("../images/november/item-bg.png.webp"); }
+        .constainer .one .itembox .item .l {
+          float: left;
+          margin-left: 1.45rem;
+          color: #fc1b64;
+          padding-top: 0.3rem; }
+          .constainer .one .itembox .item .l .t {
+            margin-bottom: 0.1rem;
+            font-size: 0.24rem; }
+          .constainer .one .itembox .item .l .b {
+            font-size: 0.32rem;
+            font-weight: bold;
+            margin-top: 0.1rem; }
+        .constainer .one .itembox .item .r {
+          float: right;
+          width: 2.2rem;
+          text-align: center;
+          color: #fff;
+          padding-top: 0.3rem; }
+          .constainer .one .itembox .item .r .t {
+            font-size: 0.24rem;
+            text-align: left;
+            padding-left: 0.5rem; }
+          .constainer .one .itembox .item .r .con {
+            font-size: 0.75rem;
+            line-height: 1;
+            text-align: left;
+            padding-left: 0.4rem; }
+            .constainer .one .itembox .item .r .con .money {
+              font-weight: bold; }
+            .constainer .one .itembox .item .r .con sub {
+              font-size: 0.20rem; }
+          .constainer .one .itembox .item .r .quan {
+            font-size: 0.20rem;
+            color: #fff;
+            text-align: left;
+            padding-left: 0.5rem; }
+    .constainer .one .table {
+      margin: 0.44rem 0.25rem 0.88rem 0.25rem;
+      border-radius: 10px;
+      overflow: hidden; }
+      .constainer .one .table table {
+        width: 100%; }
+        .constainer .one .table table th {
+          height: 0.72rem;
+          line-height: 0.72rem;
+          background: #f1f0f2;
+          color: #0098df;
+          text-align: center;
+          font-weight: bold;
+          font-size: .26rem;
+          background: #ebf4ff; }
+        .constainer .one .table table tr td {
+          color: #666666;
+          height: 0.72rem;
+          line-height: 0.72rem;
+          text-align: center;
+          font-size: .3rem;
+          background: #fff;
+          border: none; }
+        .constainer .one .table table tr:nth-child(2n +1) td {
+          background: #ebf4ff; }
+  .constainer .two {
+    margin: 0 0.36rem;
+    background-image: url("../images/top2.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    .webpa .constainer .two {
+      background-image: url("../images/top2.png.webp"); }
+    .constainer .two .boxbody {
+      padding-top: 0.52rem;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.5rem, #6759f2 1.5rem, #765bf7 100%); }
+    .constainer .two .flexBox {
+      display: flex;
+      justify-content: space-around;
+      align-item: center;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 0.8rem; }
+      .constainer .two .flexBox .flexItem {
+        flex: 1;
+        margin: 0 .2rem; }
+        .constainer .two .flexBox .flexItem .topBox {
+          background-image: url("../images/flexBg.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          height: 2.82rem; }
+          .webpa .constainer .two .flexBox .flexItem .topBox {
+            background-image: url("../images/flexBg.png.webp"); }
+          .constainer .two .flexBox .flexItem .topBox.topBox1 {
+            background-image: url("../images/flexBg1.png"); }
+            .webpa .constainer .two .flexBox .flexItem .topBox.topBox1 {
+              background-image: url("../images/flexBg1.png.webp"); }
+          .constainer .two .flexBox .flexItem .topBox .t1 {
+            font-size: 0.3rem;
+            color: #999;
+            padding: 0.3rem 0 .05rem 0; }
+          .constainer .two .flexBox .flexItem .topBox .f30 {
+            color: #f98015; }
+          .constainer .two .flexBox .flexItem .topBox .f60 {
+            color: #f98015;
+            position: relative; }
+            .constainer .two .flexBox .flexItem .topBox .f60 .f30 {
+              position: absolute;
+              left: -0.2rem;
+              bottom: 0.1rem; }
+          .constainer .two .flexBox .flexItem .topBox .f26 {
+            padding-top: 0.3rem;
+            color: #fff;
+            font-size: 0.26rem; }
+          .constainer .two .flexBox .flexItem .topBox .des {
+            color: #fff;
+            font-size: 0.26rem; }
+        .constainer .two .flexBox .flexItem .text {
+          color: #acd8ff;
+          font-size: 0.236rem; }
+    .constainer .two .quanbox {
+      margin: 0.4rem 0.26rem 0.6rem 0.26rem;
+      background-image: url("../images/quan.png");
+      height: 2.3rem;
+      background-size: 100%;
+      text-align: center; }
+      .webpa .constainer .two .quanbox {
+        background-image: url("../images/quan.png.webp"); }
+      .constainer .two .quanbox .text {
+        font-size: 0.48rem;
+        color: #f98015;
+        padding-top: 0.5rem; }
+      .constainer .two .quanbox p {
+        color: #999;
+        font-size: 0.3rem; }
+    .constainer .two .twocol {
+      margin: 0.26rem;
+      display: flex;
+      justify-content: space-between;
+      height: 3.26rem; }
+      .constainer .two .twocol .cell {
+        background: #fff;
+        border-radius: 0.2rem;
+        flex: 1;
+        margin: 0 0.1rem;
+        text-align: center; }
+        .constainer .two .twocol .cell .cellTop {
+          height: 0.64rem;
+          text-align: center; }
+          .constainer .two .twocol .cell .cellTop span {
+            display: inline-block;
+            width: 1.6rem;
+            height: 0.64rem;
+            line-height: 0.64rem;
+            font-size: 0.3rem;
+            color: #fff;
+            background: linear-gradient(180deg, #f5b52d, #ed9726);
+            border-radius: 0 0 0.2rem 0.2rem; }
+        .constainer .two .twocol .cell .org {
+          margin-top: 0.2rem; }
+        .constainer .two .twocol .cell .f56 {
+          color: #f98015; }
+        .constainer .two .twocol .cell .f26 {
+          color: #999; }
+        .constainer .two .twocol .cell .type {
+          margin-top: 0.4rem; }
+    .constainer .two .btn {
+      margin-bottom: 0.3rem;
+      margin-top: 0.6rem; }
+  .constainer .three {
+    margin: 0.6rem 0.36rem 0.2rem 0.3rem;
+    background-image: url("../images/top3.png");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    .webpa .constainer .three {
+      background-image: url("../images/top3.png.webp"); }
+    .constainer .three .boxbody {
+      padding-top: 1rem;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.5rem, #5e61f7 1.5rem, #715ffe 100%); }
+    .constainer .three .glBox {
+      display: flex;
+      justify-content: space-around; }
+    .constainer .three .glItem {
+      text-align: center;
+      flex: 1;
+      margin: 0.2rem;
+      height: 2.92rem;
+      background-image: url("../images/glbg.png");
+      background-size: 100%;
+      background-repeat: no-repeat; }
+      .webpa .constainer .three .glItem {
+        background-image: url("../images/glbg.png.webp"); }
+      .constainer .three .glItem.glItemSpc {
+        background-image: url("../images/glbg1.png"); }
+        .webpa .constainer .three .glItem.glItemSpc {
+          background-image: url("../images/glbg1.png.webp"); }
+        .constainer .three .glItem.glItemSpc .cff {
+          margin-top: 0.7rem; }
+      .constainer .three .glItem .org {
+        padding-top: 0.4rem; }
+        .constainer .three .glItem .org .f56 {
+          position: relative; }
+        .constainer .three .glItem .org .f26 {
+          position: absolute;
+          left: -.2rem;
+          bottom: 0.05rem; }
+        .constainer .three .glItem .org .flex {
+          display: flex;
+          justify-content: center;
+          align-item: center; }
+          .constainer .three .glItem .org .flex .add {
+            width: 0.4rem;
+            font-size: 0.4rem;
+            color: #999; }
+      .constainer .three .glItem .c66 {
+        font-size: 0.26rem; }
+      .constainer .three .glItem .cff {
+        margin-top: 0.5rem; }
+    .constainer .three .btn {
+      margin-top: 0.9rem;
+      background: -webkit-linear-gradient(left, #33cbff, #4aa7ff);
+      background: linear-gradient(left, #33cbff, #4aa7ff); }
+  .constainer .four {
+    margin-top: 0.8rem;
+    padding-bottom: 0.98rem; }
+    .constainer .four .imgBox {
+      display: flex;
+      margin: 0.5rem 0.27rem 0.27rem 0.65rem;
+      justify-content: space-between; }
+      .constainer .four .imgBox img {
+        width: 1.87rem;
+        height: 2.42rem; }
+
+.footer {
+  height: 1.67rem;
+  color: #a098e7;
+  font-size: 0.26rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .footer span {
+    flex: 1; }
+
+.mask, .maskShare {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0.7;
+  background: #000; }
+  .mask.mask, .maskShare.mask {
+    z-index: 10; }
+  .mask.maskShare, .maskShare.maskShare {
+    z-index: 12; }
+
+.share {
+  position: fixed;
+  top: .16rem;
+  right: 0;
+  z-index: 13; }
+  .share img {
+    width: 4.29rem; }
+
+.popup {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  display: none; }
+  .popup .popupBox {
+    position: relative;
+    background: #4942da;
+    margin: 0 .75rem;
+    border-radius: .20rem;
+    padding-bottom: 0.3rem; }
+    .popup .popupBox img.close {
+      width: 0 0.72rem;
+      height: 0.72rem;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      margin-left: -0.36rem;
+      z-index: 1; }
+    .popup .popupBox h2 {
+      padding-top: .3rem;
+      text-align: center;
+      margin: 0 0.2rem; }
+      .popup .popupBox h2 img {
+        width: 100%; }
+    .popup .popupBox .ruleBox .ruleText {
+      margin: 0 .20rem;
+      height: 45vh;
+      background: #5a53ed;
+      overflow: auto;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 0.3rem;
+      border-radius: 0 0 0.2rem .2rem; }
+      .popup .popupBox .ruleBox .ruleText .icon {
+        float: left;
+        width: 0.32rem;
+        height: 0.55rem;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 0.32rem;
+        margin-top: 0.05rem;
+        background-image: url("../images/icon.png");
+        background-size: 100%; }
+        .webpa .popup .popupBox .ruleBox .ruleText .icon {
+          background-image: url("../images/icon.png.webp"); }
+      .popup .popupBox .ruleBox .ruleText div {
+        overflow: hidden; }
+      .popup .popupBox .ruleBox .ruleText p {
+        margin-left: 0.45rem;
+        font-size: .25rem;
+        color: #fff;
+        line-height: .46rem;
+        text-align: justify; }
+    .popup .popupBox .invitationRecordBox .invitationRecord_empty, .popup .popupBox .invitationRecordBox .cgbStatusText, .popup .popupBox .cgbStatus .invitationRecord_empty, .popup .popupBox .cgbStatus .cgbStatusText {
+      font-size: .30rem;
+      color: #fc2065;
+      line-height: .30rem;
+      text-align: center;
+      margin: 1.24rem 0 1.01rem; }
+    .popup .popupBox .invitationRecordBox .invitationRecord_List, .popup .popupBox .cgbStatus .invitationRecord_List {
+      padding: .43rem .23rem .78rem .24rem;
+      background: #fff7d8; }
+      .popup .popupBox .invitationRecordBox .invitationRecord_List span, .popup .popupBox .cgbStatus .invitationRecord_List span {
+        float: left;
+        display: inline-block;
+        text-align: center; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List span:nth-child(1), .popup .popupBox .cgbStatus .invitationRecord_List span:nth-child(1) {
+          width: 15%; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List span:nth-child(2), .popup .popupBox .cgbStatus .invitationRecord_List span:nth-child(2) {
+          width: 20%; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List span:nth-child(3), .popup .popupBox .cgbStatus .invitationRecord_List span:nth-child(3) {
+          width: 30%; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List span:nth-child(4), .popup .popupBox .cgbStatus .invitationRecord_List span:nth-child(4) {
+          width: 35%; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List span.time, .popup .popupBox .cgbStatus .invitationRecord_List span.time {
+          font-size: 0.20rem; }
+      .popup .popupBox .invitationRecordBox .invitationRecord_List p, .popup .popupBox .cgbStatus .invitationRecord_List p {
+        background: #fc2666;
+        clear: both; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List p span, .popup .popupBox .cgbStatus .invitationRecord_List p span {
+          height: .56rem;
+          line-height: .56rem;
+          font-size: .24rem;
+          color: #fff; }
+      .popup .popupBox .invitationRecordBox .invitationRecord_List ul, .popup .popupBox .cgbStatus .invitationRecord_List ul {
+        margin-top: .06rem;
+        height: 3.15rem;
+        overflow-y: auto; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List ul::-webkit-scrollbar, .popup .popupBox .cgbStatus .invitationRecord_List ul::-webkit-scrollbar {
+          width: .08rem;
+          height: 3.15rem; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List ul::-webkit-scrollbar-thumb, .popup .popupBox .cgbStatus .invitationRecord_List ul::-webkit-scrollbar-thumb {
+          background: #6a3acd; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List ul::-webkit-scrollbar-track, .popup .popupBox .cgbStatus .invitationRecord_List ul::-webkit-scrollbar-track {
+          background: #6a3acd; }
+        .popup .popupBox .invitationRecordBox .invitationRecord_List ul li, .popup .popupBox .cgbStatus .invitationRecord_List ul li {
+          clear: both; }
+          .popup .popupBox .invitationRecordBox .invitationRecord_List ul li span, .popup .popupBox .cgbStatus .invitationRecord_List ul li span {
+            height: .63rem;
+            line-height: .63rem;
+            font-size: .25rem;
+            color: #fc2465; }
+    .popup .popupBox .invitationRecordBox .invitationRecordBtnBox, .popup .popupBox .invitationRecordBox .icgbStatusBtnBox, .popup .popupBox .cgbStatus .invitationRecordBtnBox, .popup .popupBox .cgbStatus .icgbStatusBtnBox {
+      clear: both;
+      margin: 0 .39rem .65rem; }
+      .popup .popupBox .invitationRecordBox .invitationRecordBtnBox a, .popup .popupBox .invitationRecordBox .icgbStatusBtnBox a, .popup .popupBox .cgbStatus .invitationRecordBtnBox a, .popup .popupBox .cgbStatus .icgbStatusBtnBox a {
+        display: inline-block;
+        width: 2.60rem;
+        height: .80rem;
+        line-height: .80rem;
+        font-size: .34rem;
+        font-weight: bold;
+        color: #f9f9f9;
+        border-radius: .40rem;
+        text-align: center; }
+        .popup .popupBox .invitationRecordBox .invitationRecordBtnBox a.shareBtn, .popup .popupBox .invitationRecordBox .invitationRecordBtnBox a.cgbStatusBtn, .popup .popupBox .invitationRecordBox .icgbStatusBtnBox a.shareBtn, .popup .popupBox .invitationRecordBox .icgbStatusBtnBox a.cgbStatusBtn, .popup .popupBox .cgbStatus .invitationRecordBtnBox a.shareBtn, .popup .popupBox .cgbStatus .invitationRecordBtnBox a.cgbStatusBtn, .popup .popupBox .cgbStatus .icgbStatusBtnBox a.shareBtn, .popup .popupBox .cgbStatus .icgbStatusBtnBox a.cgbStatusBtn {
+          float: left;
+          background: -webkit-linear-gradient(left, #fd9f23, #fc2261);
+          background: linear-gradient(left, #fd9f23, #fc2261); }
+        .popup .popupBox .invitationRecordBox .invitationRecordBtnBox a.close, .popup .popupBox .invitationRecordBox .icgbStatusBtnBox a.close, .popup .popupBox .cgbStatus .invitationRecordBtnBox a.close, .popup .popupBox .cgbStatus .icgbStatusBtnBox a.close {
+          float: right;
+          background: #efb8af; }
